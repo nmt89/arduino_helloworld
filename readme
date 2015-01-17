@@ -1,0 +1,36 @@
+/*
+*	Description:
+*	In embedded programming a helloworld program is usually
+*	making an LED blink. This is exactly what this program does.
+*	The arduino is not programmed with the arduino IDE, instead
+*	we are "talking" directly to the Atmel Mega328p in the C 
+*	programming language.
+*
+*/
+
+1) Hook up a resistor and a LED to Pin 8 of the Arduino board
+2) take a look at the code, then at the makefile if you want
+3) to build object files, as well as an executable use command make
+4) to build an hex file that you can upload to the arduino use make hex
+5) to check if arduino is reachable with avrdude use make read
+6) to flash the chip on the arduino with the code use make write
+   --> now the LED should blink
+
+	In short:
+		1) make
+		2) make hex
+		3) make read
+		4) make write
+
+Use "make clean" if you want to start over building the source files
+
+Why program the arduino in pure C? 
+
+	I think it's more fun
+	I think you can learn more
+	Don't recommend this for people that just started out with
+	programming the arduino or electronics though...
+
+nmt, 2015
+
+ 
